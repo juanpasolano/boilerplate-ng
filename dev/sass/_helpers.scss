@@ -1,0 +1,155 @@
+//angular class to prevent FOUC
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+//uppercase
+.ttu {
+  text-transform: uppercase;
+}
+
+//helpfull spacers
+@for $i from 1 through 20 {
+  .spacer-#{$i} {
+    width: 100%;
+    clear: both;
+    height: 10px*$i;
+  }
+}
+
+
+
+
+label.required {
+  &:after {
+    content: ' *';
+    color: $brand-warning;
+  }
+}
+
+.one-line-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//Helpful classes
+.align-center {
+  text-align: center !important;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.draggable {
+  cursor: move;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.left {
+  float: left !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-border {
+  border: 0px !important;
+}
+
+.no-border-radius {
+  border-radius: 0px !important;
+}
+
+.table-vertical-center {
+  display: table !important;
+  > * {
+    display: table-cell !important;
+    vertical-align: middle;
+  }
+}
+
+.table-vertical-top {
+  display: table !important;
+  > * {
+    display: table-cell !important;
+    vertical-align: top;
+  }
+}
+
+.padding-1 {
+  padding: rem(10) !important;
+}
+
+.padding-2 {
+  padding: rem(20) !important;
+}
+
+.padding-3 {
+  padding: rem(30) !important;
+}
+
+.white {
+  color: white;
+}
+
+.primary {
+  color: $brand-primary !important;
+}
+
+.weight-bold {
+  font-weight: $fw-bold;
+}
+
+.weight-regular {
+  font-weight: $fw-regular;
+}
+
+.weight-light {
+  font-weight: $fw-light;
+}

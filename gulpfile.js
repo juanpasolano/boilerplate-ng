@@ -101,7 +101,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.sass, ['sass']);
+  gulp.watch('dev/sass/**/*', ['sass']);
   gulp.watch(paths.index, ['jade:index']);
   gulp.watch(paths.jade, ['jade']);
   gulp.watch(paths.js, ['js']);

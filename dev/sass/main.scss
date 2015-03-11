@@ -1,7 +1,7 @@
-@import "vendor/normalize.scss";
-@import "vendor/main.scss";
+@import "../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "vendor/normalize";
+@import "variables";
+@import "_helpers";
 
-#banner {
-  height: 300px;
-  background: whitesmoke;
+body {
 }
