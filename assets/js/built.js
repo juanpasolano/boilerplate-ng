@@ -13,6 +13,7 @@ var app = angular.module('ubicalaCMS', [
   'ui.router',
   'ngAnimate'
 ]);
+
 angular.module('app.routes', ['ui.router']);
 
 angular.module('app.routes')
@@ -33,11 +34,11 @@ angular.module('app.routes')
           url: "/",
           templateUrl: "assets/partials/home.html",
           controller: 'HomeCtrl'
-        })
+        });
         $stateProvider.state('section', {
           url: "/section",
           templateUrl: "assets/partials/section.html"
-        })
+        });
 
       };
       return this;
@@ -76,6 +77,7 @@ angular.module('app.routes')
 //    });
 //  }
 //]);
+
 app.controller('HomeCtrl', ['$scope', '$rootScope',
   function ($scope, $rootScope) {
     console.log('home');
@@ -86,6 +88,9 @@ app.controller('HomeCtrl', ['$scope', '$rootScope',
 
 app.controller('MainCtrl', ['$scope', '$rootScope',
     function ($scope, $rootScope) {
+
+      var vm = this;
+
+      this.isSidebarOpen = false;
     }
   ]);
-

@@ -524,133 +524,146 @@ th {
   clear: both;
   height: 200px; }
 
-/* line 24, dev/sass/_helpers.scss */
+/* line 21, dev/sass/_helpers.scss */
+.row-centered {
+  text-align: center; }
+
+/* line 25, dev/sass/_helpers.scss */
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  margin-right: -4px; }
+
+/* line 36, dev/sass/_helpers.scss */
 label.required:after {
   content: ' *';
   color: #F39C12; }
 
-/* line 30, dev/sass/_helpers.scss */
+/* line 42, dev/sass/_helpers.scss */
 .one-line-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-/* line 37, dev/sass/_helpers.scss */
+/* line 49, dev/sass/_helpers.scss */
 .align-center {
   text-align: center !important; }
 
-/* line 41, dev/sass/_helpers.scss */
+/* line 53, dev/sass/_helpers.scss */
 .align-right {
   text-align: right; }
 
-/* line 45, dev/sass/_helpers.scss */
+/* line 57, dev/sass/_helpers.scss */
 .align-left {
   text-align: left; }
 
-/* line 49, dev/sass/_helpers.scss */
+/* line 61, dev/sass/_helpers.scss */
 .align-justify {
   text-align: justify; }
 
-/* line 53, dev/sass/_helpers.scss */
+/* line 65, dev/sass/_helpers.scss */
 .position-relative {
   position: relative; }
 
-/* line 57, dev/sass/_helpers.scss */
+/* line 69, dev/sass/_helpers.scss */
 .position-absolute {
   position: absolute; }
 
-/* line 61, dev/sass/_helpers.scss */
+/* line 73, dev/sass/_helpers.scss */
 .full-width {
   width: 100%; }
 
-/* line 65, dev/sass/_helpers.scss */
+/* line 77, dev/sass/_helpers.scss */
 .draggable {
   cursor: move; }
 
-/* line 69, dev/sass/_helpers.scss */
+/* line 81, dev/sass/_helpers.scss */
 .uppercase {
   text-transform: uppercase; }
 
-/* line 73, dev/sass/_helpers.scss */
+/* line 85, dev/sass/_helpers.scss */
 .capitalize {
   text-transform: capitalize; }
 
-/* line 77, dev/sass/_helpers.scss */
+/* line 89, dev/sass/_helpers.scss */
 .block {
   display: block; }
 
-/* line 81, dev/sass/_helpers.scss */
+/* line 93, dev/sass/_helpers.scss */
 .inline-block {
   display: inline-block !important; }
 
-/* line 85, dev/sass/_helpers.scss */
+/* line 97, dev/sass/_helpers.scss */
 .right {
   float: right !important; }
 
-/* line 89, dev/sass/_helpers.scss */
+/* line 101, dev/sass/_helpers.scss */
 .left {
   float: left !important; }
 
-/* line 93, dev/sass/_helpers.scss */
+/* line 105, dev/sass/_helpers.scss */
 .no-margin {
   margin: 0 !important; }
 
-/* line 97, dev/sass/_helpers.scss */
+/* line 109, dev/sass/_helpers.scss */
 .no-padding {
   padding: 0 !important; }
 
-/* line 101, dev/sass/_helpers.scss */
+/* line 113, dev/sass/_helpers.scss */
 .no-border {
   border: 0px !important; }
 
-/* line 105, dev/sass/_helpers.scss */
+/* line 117, dev/sass/_helpers.scss */
 .no-border-radius {
   border-radius: 0px !important; }
 
-/* line 109, dev/sass/_helpers.scss */
+/* line 121, dev/sass/_helpers.scss */
 .table-vertical-center {
   display: table !important; }
-  /* line 111, dev/sass/_helpers.scss */
+  /* line 123, dev/sass/_helpers.scss */
   .table-vertical-center > * {
     display: table-cell !important;
     vertical-align: middle; }
 
-/* line 117, dev/sass/_helpers.scss */
+/* line 129, dev/sass/_helpers.scss */
 .table-vertical-top {
   display: table !important; }
-  /* line 119, dev/sass/_helpers.scss */
+  /* line 131, dev/sass/_helpers.scss */
   .table-vertical-top > * {
     display: table-cell !important;
     vertical-align: top; }
 
-/* line 125, dev/sass/_helpers.scss */
-.padding-1 {
-  padding: 0.625rem !important; }
-
-/* line 129, dev/sass/_helpers.scss */
-.padding-2 {
-  padding: 1.25rem !important; }
-
-/* line 133, dev/sass/_helpers.scss */
-.padding-3 {
-  padding: 1.875rem !important; }
-
 /* line 137, dev/sass/_helpers.scss */
+.padding-1 {
+  padding: rem(10) !important; }
+
+/* line 141, dev/sass/_helpers.scss */
+.padding-2 {
+  padding: rem(20) !important; }
+
+/* line 145, dev/sass/_helpers.scss */
+.padding-3 {
+  padding: rem(30) !important; }
+
+/* line 149, dev/sass/_helpers.scss */
 .white {
   color: white; }
 
-/* line 141, dev/sass/_helpers.scss */
+/* line 153, dev/sass/_helpers.scss */
 .primary {
   color: #2C3E50 !important; }
 
-/* line 145, dev/sass/_helpers.scss */
+/* line 157, dev/sass/_helpers.scss */
 .weight-bold {
   font-weight: 300; }
 
-/* line 149, dev/sass/_helpers.scss */
+/* line 161, dev/sass/_helpers.scss */
 .weight-regular {
   font-weight: 300; }
 
-/* line 153, dev/sass/_helpers.scss */
+/* line 165, dev/sass/_helpers.scss */
 .weight-light {
   font-weight: 300; }

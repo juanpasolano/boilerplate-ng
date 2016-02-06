@@ -1,5 +1,5 @@
 doctype html
-html.no-js(ng-app="ubicalaCMS", ng-controller="MainCtrl", lang="es")
+html.no-js(ng-app="ubicalaCMS", ng-controller="MainCtrl as mainCtrl", lang="es")
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -11,7 +11,9 @@ html.no-js(ng-app="ubicalaCMS", ng-controller="MainCtrl", lang="es")
 
 
     //link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
-    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/flatly/bootstrap.min.css')
+    link(rel='stylesheet', href='assets/css/app.min.1.css') 
+    link(rel='stylesheet', href='assets/css/app.min.2.css')
+    link(rel='stylesheet', href='bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css')
     link(rel='stylesheet', href='assets/css/main.css')
     //script(src='assets/js/vendor/modernizr-2.8.3.min.js')
 
@@ -29,19 +31,12 @@ html.no-js(ng-app="ubicalaCMS", ng-controller="MainCtrl", lang="es")
         |  to improve your experience.
 
 
+    header#header(data-current-skin='teal', data-ng-include="'assets/partials/header.html'")
+    section#main
+      aside#sidebar(data-ng-include="'assets/partials/sidebar-left.html'", data-ng-class="{ 'toggled': mainCtrl.isSidebarOpen === true }")
+      div(ui-view)
 
-
-    h1 HTML angular jade boilerplate
-    .row
-      .col-md-3
-        ul
-          li
-            a(ui-sref="home") Home
-          li
-            a(ui-sref="section") Section
-      .col-md-9
-        div(ui-view)
-
+    footer#footer(data-ng-include="'assets/partials/footer.html'")
 
 
 

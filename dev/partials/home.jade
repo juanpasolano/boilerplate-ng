@@ -1,4 +1,53 @@
-h1 Home
-p Stack
-  ul
-    li(ng-repeat="tool in stack") {{tool}}
+section#content
+  .container
+    .block-header
+      h1 List
+      ul.actions
+        li
+          a(href='')
+            i.zmdi.zmdi-trending-up
+        li
+          a(href='')
+            i.zmdi.zmdi-check-all
+        li.dropdown(uib-dropdown='')
+          a(href='', uib-dropdown-toggle='')
+            i.zmdi.zmdi-more-vert
+          ul.dropdown-menu.dropdown-menu-right
+            li
+              a(href='') Refresh
+            li
+              a(href='') Manage Widgets
+            li
+              a(href='') Widgets Settings
+    .card
+      .card-header
+        h2 Basic Table 
+          small Basic example without any additional modification classes
+      .card-body.table-responsive
+        table.table
+          thead
+            tr
+              th #
+              th First Name
+              th Last Name
+              th Username
+              th Nickname
+          tbody
+            tr
+              td 1
+              td Alexandra
+              td Christopher
+              td @makinton
+              td Ducky
+            tr
+              td 2
+              td Madeleine
+              td Hollaway
+              td @hollway
+              td Cheese
+            tr
+              td 3
+              td Sebastian
+              td Johnston
+              td @sebastian
+              td Jaycee

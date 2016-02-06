@@ -18,11 +18,11 @@ angular.module('app.routes')
           url: "/",
           templateUrl: "assets/partials/home.html",
           controller: 'HomeCtrl'
-        })
+        });
         $stateProvider.state('section', {
           url: "/section",
           templateUrl: "assets/partials/section.html"
-        })
+        });
 
       };
       return this;
