@@ -18,7 +18,7 @@ html.no-js(ng-app="ubicalaCMS", ng-controller="MainCtrl as mainCtrl", lang="es")
     link(rel='stylesheet', href='assets/css/main.css')
     //script(src='assets/js/vendor/modernizr-2.8.3.min.js')
 
-  body.sw-toggled
+  body(data-ng-class="{'sw-toggled': mainCtrl.layoutType === '1'}")
 
 
     //if lt IE 8
