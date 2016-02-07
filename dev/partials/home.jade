@@ -28,6 +28,7 @@ section#content
           thead
             tr
               th #
+              th Image
               th First Name
               th Last Name
               th Username
@@ -35,7 +36,9 @@ section#content
           tbody
             tr
               td 1
-              td Alexandra
+              td 
+                img.img-circle(src="assets/img/profile-pics/2.jpg", alt="", width="20")
+                | &nbsp;Alexandra
               td Christopher
               td @makinton
               td Ducky
@@ -51,3 +54,59 @@ section#content
               td Johnston
               td @sebastian
               td Jaycee
+    
+    
+    
+    
+    .row
+      .col-sm-6
+        .card.ng-scope
+          .card-header
+            h2
+              | Recent Items 
+              small Phasellus condimentum ipsum id auctor imperdie
+            ul.actions
+              li.dropdown(uib-dropdown='')
+                a.dropdown-toggle(href='', uib-dropdown-toggle='', aria-haspopup='true', aria-expanded='false')
+                  i.zmdi.zmdi-more-vert
+                ul.dropdown-menu.dropdown-menu-right
+                  li
+                    a(href='') Refresh
+                  li
+                    a(href='') Settings
+                  li
+                    a(href='') Other Settings
+          .card-body.m-t-0
+            table.table.table-inner.table-vmiddle
+              thead
+                tr
+                  th ID
+                  th Name
+                  th(style='width: 60px') Price
+              tbody
+                // ngRepeat: w in rictrl.riResult.list
+                tr.ng-scope
+                  td.f-500.c-cyan.ng-binding 2569
+                  td.ng-binding Samsung Galaxy Mega
+                  td.f-500.c-cyan.ng-binding 521
+                // end ngRepeat: w in rictrl.riResult.list
+                tr.ng-scope
+                  td.f-500.c-cyan.ng-binding 9658
+                  td.ng-binding Huawei Ascend P6
+                  td.f-500.c-cyan.ng-binding 440
+                // end ngRepeat: w in rictrl.riResult.list
+                tr.ng-scope
+                  td.f-500.c-cyan.ng-binding 1101
+                  td.ng-binding HTC One M8
+                  td.f-500.c-cyan.ng-binding 680
+                // end ngRepeat: w in rictrl.riResult.list
+                tr.ng-scope
+                  td.f-500.c-cyan.ng-binding 2569
+                  td.ng-binding Samsung Galaxy Alpha
+                  td.f-500.c-cyan.ng-binding 870
+                // end ngRepeat: w in rictrl.riResult.list
+                tr.ng-scope
+                  td.f-500.c-cyan.ng-binding 6598
+                  td.ng-binding LG G3
+                  td.f-500.c-cyan.ng-binding 690
+                // end ngRepeat: w in rictrl.riResult.list

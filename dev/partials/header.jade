@@ -13,40 +13,40 @@ ul.header-inner.clearfix
           input#tw-switch(type='checkbox', hidden='hidden', data-change-layout='mactrl.layoutType')
           label.ts-helper(for='tw-switch')
       li#top-search
-        a(href='', data-ng-click='hctrl.openSearch()')
+        a(href='', data-ng-click='headerCtrl.openSearch()')
           i.tm-icon.zmdi.zmdi-search
       li.dropdown(uib-dropdown='')
         a(uib-dropdown-toggle='', href='')
           i.tm-icon.zmdi.zmdi-email
-          i.tmn-counts 6
+          i.tmn-counts 1
         .dropdown-menu.dropdown-menu-lg.stop-propagate.pull-right
           .listview
             .lv-header
               | Messages
             .lv-body
-              a.lv-item(ng-href='', ng-repeat='w in hctrl.messageResult.list')
+              a.lv-item(ng-href='')
                 .media
                   .pull-left
-                    img.lv-img-sm(ng-src='img/profile-pics/{{ w.img }}', alt='')
+                    img.lv-img-sm(src='assets/img/profile-pics/2.jpg', alt='')  
                   .media-body
-                    .lv-title {{ w.user }}
-                    small.lv-small {{ w.text }}
+                    .lv-title David Belles
+                    small.lv-small Lorem ipssum dolor sit amet, consectetur adipisicing elit. Cupiditate laudantium repudiandae blanditiis est et harum, suscipit dolor perferendis corrupti, debitis incidunt recusandae voluptatibus molestiae vero voluptates, animi omnis. Ullam, commodi.
             .clearfix
             a.lv-footer(href='') View All
       li.dropdown(uib-dropdown='')
         a(uib-dropdown-toggle='', href='')
           i.tm-icon.zmdi.zmdi-notifications
-          i.tmn-counts 9
+          i.tmn-counts 0
         .dropdown-menu.dropdown-menu-lg.stop-propagate.pull-right
           #notifications.listview
             .lv-header
               | Notification
               ul.actions
                 li
-                  a(href='', data-ng-click='hctrl.clearNotification($event)')
+                  a(href='', data-ng-click='headerCtrl.clearNotification($event)')
                     i.zmdi.zmdi-check-all
             .lv-body
-              a.lv-item(ng-href='', ng-repeat='w in hctrl.messageResult.list')
+              a.lv-item(ng-href='', ng-repeat='w in headerCtrl.messageResult.list')
                 .media
                   .pull-left
                     img.lv-img-sm(ng-src='img/profile-pics/{{ w.img }}', alt='')
@@ -58,11 +58,10 @@ ul.header-inner.clearfix
       li.dropdown.hidden-xs(uib-dropdown='')
         a(uib-dropdown-toggle='', href='')
           i.tm-icon.zmdi.zmdi-view-list-alt
-          i.tmn-counts 2
+          i.tmn-counts.hide 0
         .dropdown-menu.pull-right.dropdown-menu-lg
           .listview
-            .lv-header
-              | Tasks
+            .lv-header Tasks
             .lv-body
               .lv-item
                 .lv-title.m-b-5 HTML5 Validation Report
@@ -99,11 +98,11 @@ ul.header-inner.clearfix
             span.ss-skin.w(ng-repeat='w in mactrl.skinList | limitTo : 6', class='bgm-{{ }}', data-ng-click='mactrl.skinSwitch(w)')
           li.divider.hidden-xs
           li.hidden-xs
-            a(data-ng-click='hctrl.fullScreen()', href='')
+            a(data-ng-click='headerCtrl.fullScreen()', href='')
               i.zmdi.zmdi-fullscreen
               |  Toggle Fullscreen
           li
-            a(data-ng-click='hctrl.clearLocalStorage()', href='')
+            a(data-ng-click='headerCtrl.clearLocalStorage()', href='')
               i.zmdi.zmdi-delete
               |  Clear Local Storage
           li
@@ -120,5 +119,5 @@ ul.header-inner.clearfix
 // Top Search Content
 #top-search-wrap
   .tsw-inner
-    i#top-search-close.zmdi.zmdi-arrow-left(data-ng-click='hctrl.closeSearch()')
+    i#top-search-close.zmdi.zmdi-arrow-left(data-ng-click='headerCtrl.closeSearch()')
     input(type='text')

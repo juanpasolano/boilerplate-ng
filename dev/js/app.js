@@ -11,5 +11,7 @@ window.addEventListener('load', function (e) {
 var app = angular.module('ubicalaCMS', [
   'app.routes',
   'ui.router',
-  'ngAnimate'
+  'ngAnimate',
+  'materialAdmin',
+  'ui.bootstrap'
 ]);

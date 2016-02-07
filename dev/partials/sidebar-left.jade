@@ -2,7 +2,7 @@
   .profile-menu
     a(href='', toggle-submenu='')
       .profile-pic
-        img(src='assets/img/profile-pics/1.jpg', alt='')
+        img(src='http://vet-pro.co/img/logo.png', alt='')
       .profile-info
         | Malinda Hollaway
         i.zmdi.zmdi-caret-down
@@ -28,151 +28,18 @@
       a(data-ui-sref='home', data-ng-click='mactrl.sidebarStat($event)')
         i.zmdi.zmdi-home
         |  Home
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('headers') }")
+    li.sub-menu.active.toggled(data-ng-class="{ 'active toggled': mactrl.$state.includes('headers') }")
       a(href='', toggle-submenu='')
         i.zmdi.zmdi-view-compact
-        |  Headers
+        |  Super veterinaria
       ul
         li
-          a(data-ui-sref-active='active', data-ui-sref='headers.textual-menu', data-ng-click='mactrl.sidebarStat($event)') Textual menu
+          a(href="#") Tablero
         li
-          a(data-ui-sref-active='active', data-ui-sref='headers.image-logo', data-ng-click='mactrl.sidebarStat($event)') Image logo
+          a(href="#") Calendario
         li
-          a(data-ui-sref-active='active', data-ui-sref='headers.mainmenu-on-top', data-ng-click='mactrl.sidebarStat($event)') Mainmenu on top
-    li(data-ui-sref-active='active')
-      a(data-ui-sref='typography', data-ng-click='mactrl.sidebarStat($event)')
-        i.zmdi.zmdi-format-underlined
-        |  Typography
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('widgets') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-widgets
-        |  Widgets
-      ul
+          a(href="#") Mascotas
         li
-          a(data-ui-sref-active='active', data-ui-sref='widgets.widget-templates', data-ng-click='mactrl.sidebarStat($event)') Templates
+          a(href="#") Clientes
         li
-          a(data-ui-sref-active='active', data-ui-sref='widgets.widgets', data-ng-click='mactrl.sidebarStat($event)') Widgets
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('tables') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-view-list
-        |  Tables
-      ul
-        li
-          a(data-ui-sref-active='active', data-ui-sref='tables.tables', data-ng-click='mactrl.sidebarStat($event)') Tables
-        li
-          a(data-ui-sref-active='active', data-ui-sref='tables.data-table', data-ng-click='mactrl.sidebarStat($event)') Data Tables
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('form') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-collection-text
-        |  Forms
-      ul
-        li
-          a(data-ui-sref-active='active', data-ui-sref='form.basic-form-elements', data-ng-click='mactrl.sidebarStat($event)') Basic Form Elements
-        li
-          a(data-ui-sref-active='active', data-ui-sref='form.form-components', data-ng-click='mactrl.sidebarStat($event)') Form Components
-        li
-          a(data-ui-sref-active='active', data-ui-sref='form.form-examples', data-ng-click='mactrl.sidebarStat($event)') Form Examples
-        li
-          a(data-ui-sref-active='active', data-ui-sref='form.form-validations', data-ng-click='mactrl.sidebarStat($event)') Form Validation
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('user-interface') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-swap-alt
-        | User Interface
-      ul
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.ui-bootstrap', data-ng-click='mactrl.sidebarStat($event)') UI Bootstrap
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.colors', data-ng-click='mactrl.sidebarStat($event)') Colors
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.animations', data-ng-click='mactrl.sidebarStat($event)') Animations
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.box-shadow', data-ng-click='mactrl.sidebarStat($event)') Box Shadow
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.buttons', data-ng-click='mactrl.sidebarStat($event)') Buttons
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.icons', data-ng-click='mactrl.sidebarStat($event)') Icons
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.alerts', data-ng-click='mactrl.sidebarStat($event)') Alerts
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.preloaders', data-ng-click='mactrl.sidebarStat($event)') Preloaders
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.notifications-dialogs', data-ng-click='mactrl.sidebarStat($event)') Notifications & Dialogs
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.media', data-ng-click='mactrl.sidebarStat($event)') Media
-        li
-          a(data-ui-sref-active='active', data-ui-sref='user-interface.other-components', data-ng-click='mactrl.sidebarStat($event)') Others
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('charts') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-trending-up
-        | Charts
-      ul
-        li
-          a(data-ui-sref-active='active', data-ui-sref='charts.flot-charts', data-ng-click='mactrl.sidebarStat($event)') Flot Charts
-        li
-          a(data-ui-sref-active='active', data-ui-sref='charts.other-charts', data-ng-click='mactrl.sidebarStat($event)') Other Charts
-    li(data-ui-sref-active='active')
-      a(data-ui-sref='calendar', data-ng-click='mactrl.sidebarStat($event)')
-        i.zmdi.zmdi-calendar
-        |  Calendar
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('photo-gallery') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-image
-        | Photo Gallery
-      ul
-        li
-          a(data-ui-sref-active='active', data-ui-sref='photo-gallery.photos', data-ng-click='mactrl.sidebarStat($event)') Default
-        li
-          a(data-ui-sref-active='active', data-ui-sref='photo-gallery.timeline', data-ng-click='mactrl.sidebarStat($event)') Timeline
-    li(data-ui-sref-active='active')
-      a(data-ui-sref='generic-classes', data-ng-click='mactrl.sidebarStat($event)')
-        i.zmdi.zmdi-layers
-        |  Generic Classes
-    li.sub-menu(data-ng-class="{ 'active toggled': mactrl.$state.includes('pages') }")
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-collection-item
-        |  Sample Pages
-      ul
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.profile.profile-about', data-ng-click='mactrl.sidebarStat($event)') Profile
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.listview', data-ng-click='mactrl.sidebarStat($event)') List View
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.messages', data-ng-click='mactrl.sidebarStat($event)') Messages
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.pricing-table', data-ng-click='mactrl.sidebarStat($event)') Pricing Table
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.contacts', data-ng-click='mactrl.sidebarStat($event)') Contacts
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.invoice', data-ng-click='mactrl.sidebarStat($event)') Invoice
-        li
-          a(data-ui-sref-active='active', data-ui-sref='pages.wall', data-ng-click='mactrl.sidebarStat($event)') Wall
-        li
-          a(href='login.html') Login and Sign Up
-        li
-          a(href='lockscreen.html') Lockscreen
-        li
-          a(href='404.html') Error 404
-    li.sub-menu
-      a(href='', toggle-submenu='')
-        i.zmdi.zmdi-menu
-        |  3 Level Menu
-      ul
-        li
-          a(href='') Level 2 link
-        li
-          a(href='') Another level 2 Link
-        li.sub-menu
-          a(href='', toggle-submenu='') I have children too
-          ul
-            li
-              a(href='') Level 3 link
-            li
-              a(href='') Another Level 3 link
-            li
-              a(href='') Third one
-        li
-          a(href='') One more 2
-    li
-      a(href='https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985')
-        i.zmdi.zmdi-money
-        |  Buy this template
+          a(href="#") Configuraciones
