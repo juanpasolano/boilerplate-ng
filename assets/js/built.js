@@ -8,7 +8,7 @@ window.addEventListener('load', function (e) {
 
 }, false);
 
-var app = angular.module('ubicalaCMS', [
+var app = angular.module('app', [
   'app.routes',
   'ui.router',
   'ngAnimate',
@@ -108,7 +108,7 @@ app.controller('MainCtrl', ['$scope', '$rootScope',
       var vm = this;
 
       this.isSidebarOpen = false;
-      this.layoutType = '2';
+      this.layoutType = '1';
     }
   ]);
 

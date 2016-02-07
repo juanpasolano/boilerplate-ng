@@ -8,7 +8,7 @@ window.addEventListener('load', function (e) {
 
 }, false);
 
-var app = angular.module('ubicalaCMS', [
+var app = angular.module('app', [
   'app.routes',
   'ui.router',
   'ngAnimate',

@@ -4,6 +4,6 @@ app.controller('MainCtrl', ['$scope', '$rootScope',
       var vm = this;
 
       this.isSidebarOpen = false;
-      this.layoutType = '2';
+      this.layoutType = '1';
     }
   ]);
