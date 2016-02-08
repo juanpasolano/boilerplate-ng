@@ -1,31 +1,36 @@
 section#content
+  //- button.btn.btn-float.btn-danger.m-btn.waves-effect.waves-circle
+  //-   i.zmdi.zmdi-plus
+  button.btn.bgm-orange.btn-icon.m-btn.btn-float
+    i.zmdi.zmdi-plus
   .container
-    .block-header
-      h1 List
-      button.btn.btn-success.btn-icon-text.waves-effect
-        i.zmdi.zmdi-plus
-        |  Crear mascota
-
-      ul.actions
-        li
-          a(href='')
-            i.zmdi.zmdi-plus
-        li
-          a(href='')
-            i.zmdi.zmdi-trending-up
-        li
-          a(href='')
-            i.zmdi.zmdi-check-all
-        li.dropdown(uib-dropdown='')
-          a(href='', uib-dropdown-toggle='')
-            i.zmdi.zmdi-more-vert
-          ul.dropdown-menu.dropdown-menu-right
+    .row
+      .col-sm-9
+        .block-header
+          h2 Animales
+            small Basic example without any additional modification classes
+          ul.actions
             li
-              a(href='') Refresh
+              a(href='')
+                i.zmdi.zmdi-plus
             li
-              a(href='') Manage Widgets
+              a(href='')
+                i.zmdi.zmdi-trending-up
             li
-              a(href='') Widgets Settings
+              a(href='')
+                i.zmdi.zmdi-check-all
+            li.dropdown(uib-dropdown='')
+              a(href='', uib-dropdown-toggle='')
+                i.zmdi.zmdi-more-vert
+              ul.dropdown-menu.dropdown-menu-right
+                li
+                  a(href='') Refresh
+                li
+                  a(href='') Manage Widgets
+                li
+                  a(href='') Widgets Settings
+      .col-sm-2
+        a.btn. Crear animal
     .card
       .card-header
         h2 Basic Table 
@@ -35,7 +40,6 @@ section#content
           thead
             tr
               th #
-              th Image
               th First Name
               th Last Name
               th Username
